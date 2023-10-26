@@ -42,5 +42,11 @@ public class BootStrap
         services.AddTransient(typeof(IRepository<>), typeof(GenericRepositorie<>));
         services.AddTransient<ConfigBotService>();
         services.AddTransient(typeof(IRepository<User>), typeof(UserRepository));
+
+
+        var _services = services.BuildServiceProvider();
+
+        var dbCntext = _services.GetService<AppDbContext>();
+        dbCntext.Database.EnsureCreated();
     }
 }
