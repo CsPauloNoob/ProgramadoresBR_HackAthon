@@ -27,7 +27,7 @@ namespace Infrastructure.Data.Context
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlite("Data Source=C:\\home\\data\\Bot.db");
+                optionsBuilder.UseSqlite("Data Source=Bot.db");
             }
         }
 
