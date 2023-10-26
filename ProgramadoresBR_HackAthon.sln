@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastru
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bot.API", "Bot.API\Bot.API.csproj", "{7FA1FD5C-B16D-4A9C-B208-66610A69B373}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bot", "Bot\Bot.csproj", "{ED41577D-DAF9-4309-B1A6-C364AA8BE2D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{7FA1FD5C-B16D-4A9C-B208-66610A69B373}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7FA1FD5C-B16D-4A9C-B208-66610A69B373}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7FA1FD5C-B16D-4A9C-B208-66610A69B373}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED41577D-DAF9-4309-B1A6-C364AA8BE2D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED41577D-DAF9-4309-B1A6-C364AA8BE2D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED41577D-DAF9-4309-B1A6-C364AA8BE2D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED41577D-DAF9-4309-B1A6-C364AA8BE2D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
