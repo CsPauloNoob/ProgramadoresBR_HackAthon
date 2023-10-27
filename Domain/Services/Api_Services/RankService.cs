@@ -32,7 +32,7 @@ namespace Domain.Services.Api_Services
             var rankUsers = users
                 .Where(x => x.IsRanked).ToList();
 
-            return rankUsers.OrderBy(
+            return rankUsers.OrderByDescending(
                 x => x.RankPoints).ToList();
         }
 

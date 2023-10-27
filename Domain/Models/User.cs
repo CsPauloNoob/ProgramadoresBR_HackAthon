@@ -4,7 +4,9 @@ namespace Domain.Models
 {
     public class User : TEntity
     {
-        #pragma warning disable
+#pragma warning disable
+        public User() { }
+
 
         public User(ulong id, 
             string gameNickName,
