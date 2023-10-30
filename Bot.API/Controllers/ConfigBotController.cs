@@ -26,7 +26,7 @@ namespace Bot.API.Controllers
         public async Task<IActionResult> GetRank(ulong guildId)
         {
             
-            var rank = _rankService.GetRankByGuildId(guildId);
+            var rank = _rankService.GetRankByGuildId(1038639386646032415);
             var viewModel = new List<UsersViewModel>();
 
             if(rank.Count == 0)
