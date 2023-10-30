@@ -13,10 +13,7 @@ namespace Infrastructure.FortniteApi
         public ApiConsumer()
         {
             API_KEY =
-                Environment.
-                GetEnvironmentVariable
-                ("FORTNITE_API_KEY",
-                EnvironmentVariableTarget.User);
+                Environment.GetEnvironmentVariable("FORTNITE_API_KEY");
 
             _client = new FortniteApiClient(API_KEY);
         }
