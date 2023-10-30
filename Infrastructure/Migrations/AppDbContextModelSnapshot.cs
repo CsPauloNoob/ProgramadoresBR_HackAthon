@@ -57,12 +57,15 @@ namespace Infrastructure.Migrations
                     b.Property<bool>("IsRanked")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("RankPoints")
+                    b.Property<int>("Kills")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("ThumbUrl")
                         .IsRequired()
                         .HasColumnType("TEXT");
+
+                    b.Property<double>("WinRate")
+                        .HasColumnType("REAL");
 
                     b.HasKey("Id");
 
@@ -78,8 +81,9 @@ namespace Infrastructure.Migrations
                             GameNickName = "Jhpo",
                             GuildId = 1038639386646032415ul,
                             IsRanked = true,
-                            RankPoints = 640,
-                            ThumbUrl = "https://cdn.discordapp.com/embed/avatars/0.png?size=1024"
+                            Kills = 640,
+                            ThumbUrl = "https://cdn.discordapp.com/embed/avatars/0.png?size=1024",
+                            WinRate = 12.199999999999999
                         },
                         new
                         {
@@ -88,8 +92,9 @@ namespace Infrastructure.Migrations
                             GameNickName = "Faker171",
                             GuildId = 1038639386646032415ul,
                             IsRanked = true,
-                            RankPoints = 99,
-                            ThumbUrl = "https://cdn.discordapp.com/embed/avatars/0.png?size=1024"
+                            Kills = 99,
+                            ThumbUrl = "https://cdn.discordapp.com/embed/avatars/0.png?size=1024",
+                            WinRate = 0.5
                         },
                         new
                         {
@@ -98,8 +103,9 @@ namespace Infrastructure.Migrations
                             GameNickName = "Oyurii",
                             GuildId = 1038639386646032415ul,
                             IsRanked = true,
-                            RankPoints = 47,
-                            ThumbUrl = "https://cdn.discordapp.com/embed/avatars/0.png?size=1024"
+                            Kills = 93,
+                            ThumbUrl = "https://cdn.discordapp.com/embed/avatars/0.png?size=1024",
+                            WinRate = 10.0
                         },
                         new
                         {
@@ -108,28 +114,9 @@ namespace Infrastructure.Migrations
                             GameNickName = "manzass",
                             GuildId = 1038639386646032415ul,
                             IsRanked = true,
-                            RankPoints = 117,
-                            ThumbUrl = "https://cdn.discordapp.com/embed/avatars/0.png?size=1024"
-                        },
-                        new
-                        {
-                            Id = 608124889064275968ul,
-                            DiscordNickName = "GabProgamer",
-                            GameNickName = "GabsProGamer",
-                            GuildId = 1038639386646032415ul,
-                            IsRanked = true,
-                            RankPoints = 2,
-                            ThumbUrl = "https://cdn.discordapp.com/embed/avatars/0.png?size=1024"
-                        },
-                        new
-                        {
-                            Id = 660962157457965068ul,
-                            DiscordNickName = "HaiKaiis",
-                            GameNickName = "haikaiis!",
-                            GuildId = 1038639386646032415ul,
-                            IsRanked = true,
-                            RankPoints = 748,
-                            ThumbUrl = "https://cdn.discordapp.com/embed/avatars/0.png?size=1024"
+                            Kills = 117,
+                            ThumbUrl = "https://cdn.discordapp.com/embed/avatars/0.png?size=1024",
+                            WinRate = 45.799999999999997
                         });
                 });
 

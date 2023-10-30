@@ -34,7 +34,10 @@ namespace Domain.Models
         public bool IsRanked { get; set; }
 
         [AllowNull]
-        public int RankPoints { get; set; }
+        public int Kills { get; set; } 
+
+        [AllowNull]
+        public double WinRate { get; set; }
 
         [NotNull]
         public ulong GuildId { get; set; }

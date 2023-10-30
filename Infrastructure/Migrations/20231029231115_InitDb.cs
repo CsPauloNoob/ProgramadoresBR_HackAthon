@@ -37,7 +37,8 @@ namespace Infrastructure.Migrations
                     DiscordNickName = table.Column<string>(type: "TEXT", nullable: false),
                     ThumbUrl = table.Column<string>(type: "TEXT", nullable: false),
                     IsRanked = table.Column<bool>(type: "INTEGER", nullable: false),
-                    RankPoints = table.Column<int>(type: "INTEGER", nullable: false),
+                    Kills = table.Column<int>(type: "INTEGER", nullable: false),
+                    WinRate = table.Column<double>(type: "REAL", nullable: false),
                     GuildId = table.Column<ulong>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
@@ -53,15 +54,13 @@ namespace Infrastructure.Migrations
 
             migrationBuilder.InsertData(
                 table: "user",
-                columns: new[] { "Id", "DiscordNickName", "GameNickName", "GuildId", "IsRanked", "RankPoints", "ThumbUrl" },
+                columns: new[] { "Id", "DiscordNickName", "GameNickName", "GuildId", "IsRanked", "Kills", "ThumbUrl", "WinRate" },
                 values: new object[,]
                 {
-                    { 385869185198063626ul, "Cleiton Furst", "Jhpo", 1038639386646032415ul, true, 640, "https://cdn.discordapp.com/embed/avatars/0.png?size=1024" },
-                    { 608124889064275968ul, "GabProgamer", "GabsProGamer", 1038639386646032415ul, true, 2, "https://cdn.discordapp.com/embed/avatars/0.png?size=1024" },
-                    { 660962157457965068ul, "HaiKaiis", "haikaiis!", 1038639386646032415ul, true, 748, "https://cdn.discordapp.com/embed/avatars/0.png?size=1024" },
-                    { 732999507331252246ul, "VicManzas", "manzass", 1038639386646032415ul, true, 117, "https://cdn.discordapp.com/embed/avatars/0.png?size=1024" },
-                    { 926292122842312795ul, "camargooo", "Faker171", 1038639386646032415ul, true, 99, "https://cdn.discordapp.com/embed/avatars/0.png?size=1024" },
-                    { 1134185785617293402ul, "yuru44", "Oyurii", 1038639386646032415ul, true, 47, "https://cdn.discordapp.com/embed/avatars/0.png?size=1024" }
+                    { 385869185198063626ul, "Cleiton Furst", "Jhpo", 1038639386646032415ul, true, 640, "https://cdn.discordapp.com/embed/avatars/0.png?size=1024", 12.199999999999999 },
+                    { 732999507331252246ul, "VicManzas", "manzass", 1038639386646032415ul, true, 117, "https://cdn.discordapp.com/embed/avatars/0.png?size=1024", 45.799999999999997 },
+                    { 926292122842312795ul, "camargooo", "Faker171", 1038639386646032415ul, true, 99, "https://cdn.discordapp.com/embed/avatars/0.png?size=1024", 0.5 },
+                    { 1134185785617293402ul, "yuru44", "Oyurii", 1038639386646032415ul, true, 93, "https://cdn.discordapp.com/embed/avatars/0.png?size=1024", 10.0 }
                 });
 
             migrationBuilder.CreateIndex(

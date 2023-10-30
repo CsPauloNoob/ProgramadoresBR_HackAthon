@@ -28,7 +28,8 @@ namespace Infrastructure.Data.Context
                     Id = 385869185198063626,
                     DiscordNickName = "Cleiton Furst",
                     GuildId = 1038639386646032415,
-                    RankPoints = 640,
+                    Kills = 640,
+                    WinRate = 12.2,
                     IsRanked = true,
                     GameNickName = "Jhpo",
                     ThumbUrl = "https://cdn.discordapp.com/embed/avatars/0.png?size=1024"
@@ -39,7 +40,8 @@ namespace Infrastructure.Data.Context
                     Id = 926292122842312795,
                     DiscordNickName = "camargooo",
                     GuildId = 1038639386646032415,
-                    RankPoints = 99,
+                    Kills = 99,
+                    WinRate = 0.5,
                     IsRanked = true,
                     GameNickName = "Faker171",
                     ThumbUrl = "https://cdn.discordapp.com/embed/avatars/0.png?size=1024"
@@ -50,7 +52,8 @@ namespace Infrastructure.Data.Context
                     Id = 1134185785617293402,
                     DiscordNickName = "yuru44",
                     GuildId = 1038639386646032415,
-                    RankPoints = 47,
+                    Kills = 93,
+                    WinRate = 10,
                     IsRanked = true,
                     GameNickName = "Oyurii",
                     ThumbUrl = "https://cdn.discordapp.com/embed/avatars/0.png?size=1024"
@@ -61,35 +64,13 @@ namespace Infrastructure.Data.Context
                     Id = 732999507331252246,
                     DiscordNickName = "VicManzas",
                     GuildId = 1038639386646032415,
-                    RankPoints = 117,
+                    Kills = 117,
+                    WinRate = 45.8,
                     IsRanked = true,
                     GameNickName = "manzass",
                     ThumbUrl = "https://cdn.discordapp.com/embed/avatars/0.png?size=1024"
-                },
-
-                new User()
-                {
-                    Id = 608124889064275968,
-                    DiscordNickName = "GabProgamer",
-                    GuildId = 1038639386646032415,
-                    RankPoints = 2,
-                    IsRanked = true,
-                    GameNickName = "GabsProGamer",
-                    ThumbUrl = "https://cdn.discordapp.com/embed/avatars/0.png?size=1024"
-                },
-
-                new User()
-                {
-                    Id = 660962157457965068,
-                    DiscordNickName = "HaiKaiis",
-                    GuildId = 1038639386646032415,
-                    RankPoints = 748,
-                    IsRanked = true,
-                    GameNickName = "haikaiis!",
-                    ThumbUrl = "https://cdn.discordapp.com/embed/avatars/0.png?size=1024"
                 }
-
-                );
+            );
         }
         
         
