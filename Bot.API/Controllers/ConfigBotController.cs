@@ -22,7 +22,7 @@ namespace Bot.API.Controllers
         }
 
 
-        [HttpGet("{guildId}")]
+        [HttpGet]
         public async Task<IActionResult> GetRank(ulong guildId)
         {
             
@@ -40,7 +40,7 @@ namespace Bot.API.Controllers
                         UserName = item.UserName,
                         ThumbUrl = item.ThumbUrl,
                         StatsCount = (int)item.RankPoints
-                    }) ;
+                    });
             }
 
 
