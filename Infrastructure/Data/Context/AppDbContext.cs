@@ -22,7 +22,7 @@ namespace Infrastructure.Data.Context
                 .ToTable("user").HasKey(e => e.Id);
 
 
-            modelBuilder.Entity<User>().HasData(
+            /*modelBuilder.Entity<User>().HasData(
                 new User()
                 {
                     Id = 385869185198063626,
@@ -70,7 +70,7 @@ namespace Infrastructure.Data.Context
                     GameNickName = "manzass",
                     ThumbUrl = "https://cdn.discordapp.com/embed/avatars/0.png?size=1024"
                 }
-            );
+            );*/
         }
         
         

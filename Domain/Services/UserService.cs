@@ -101,11 +101,13 @@ namespace Domain.Services
 
                     #region Logica de rankeamento
 
-                    if (guild.RankingTypes == RankingTypes.Kills)
+                    /*if (guild.RankingTypes == RankingTypes.Kills)
                         rankPoints = _api.GetKillStats(gameNickName);
 
                     else if (guild.RankingTypes == RankingTypes.WinRate)
-                        rankPoints = _api.GetWinRate(gameNickName);
+                        rankPoints = _api.GetWinRate(gameNickName);*/
+
+
 
                     #endregion
 
@@ -118,7 +120,7 @@ namespace Domain.Services
 
                     user.GuildId = guildId;
 
-                    switch (guild.RankingTypes)
+                    /*switch (guild.RankingTypes)
                     {
                         case RankingTypes.Kills:
                             user.Kills = (int)rankPoints;
@@ -130,7 +132,10 @@ namespace Domain.Services
                             user.WinRate = 0;
                             user.Kills = 0;
                             break;
-                    }
+                    }*/
+
+                    user.Kills = (int)_api.GetKillStats(gameNickName);
+                    user.WinRate = _api.GetWinRate(gameNickName);
 
                     _userRepository.Save(user);
 

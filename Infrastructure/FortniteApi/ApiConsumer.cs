@@ -21,13 +21,21 @@ namespace Infrastructure.FortniteApi
 
         public bool CheckAccountExists(string nickName)
         {
-            var account = _client.V2.Stats.GetBrV2Async
-                (x => x.Name = nickName).GetAwaiter().GetResult();
+            try
+            {
+                var account = _client.V2.Stats.GetBrV2Async
+                    (x => x.Name = nickName).GetAwaiter().GetResult();
 
-            if(account.IsSuccess)
-                return true;
+                if (account.IsSuccess)
+                    return true;
 
-            return false;
+                return false;
+            }
+
+            catch (NullReferenceException ex) 
+            {
+                return false;
+            }
         }
 
         public double GetKillStats(string nickName)
